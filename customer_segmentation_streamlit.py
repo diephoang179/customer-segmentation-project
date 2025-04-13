@@ -94,7 +94,7 @@ elif choice == 'Segmentation Searching':
         # Nếu người dùng chọn nhập mã khách hàng
         st.write("#### Tìm kiểm theo mã khách hàng")
         # Tạo điều khiển để người dùng nhập mã khách hàng
-        customer_id = st.text_input("***Vui lòng nhập mã khách hàng***", placeholder="Ví dụ: KH1000")
+        customer_id = st.text_input("***Vui lòng nhập mã khách hàng (từ KH1000 đến KH5000)***", placeholder="Ví dụ: KH1000")
         # Nếu người dùng nhập mã khách hàng, thực hiện các xử lý tiếp theo
         # Đề xuất khách hàng thuộc cụm
         # In kết quả ra màn hình

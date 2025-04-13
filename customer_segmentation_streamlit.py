@@ -19,13 +19,13 @@ menu = ["How To Use","About this Project", "Segmentation Searching", "Input New 
 choice = st.sidebar.selectbox('📌 Menu', menu)
 st.sidebar.markdown("---")  # Đường kẻ phân cách
 
-st.sidebar.markdown("""**📌 Sản phẩm được thực hiện bởi nhóm:**\\
-                        1. Mạch Cảnh Toàn\\
-                        2. Hoàng Thị Diệp
+st.sidebar.markdown("""**🍀 Sản phẩm được thực hiện bởi nhóm:**\\
+                             1.  Mạch Cảnh Toàn\\
+                             2.  Hoàng Thị Diệp
                         """)
 st.sidebar.markdown("""**🎓 Giảng viên hướng dẫn:**\\
-                        1. Cô Khuất Thùy Phương
-                        """)
+                             1.  Cô Khuất Thùy Phương
+                            """)
 
 # Đọc dữ liệu mẫu
 sample_data = pd.read_csv("cust_seg_sample.csv")
@@ -33,20 +33,20 @@ sample_data = pd.read_csv("cust_seg_sample.csv")
 
 if choice == 'How To Use':
     st.subheader("How To Use This Website")
+    st.write("##### **🎉 Chào mừng bạn ghé thăm, vui lòng đọc hướng dẫn bên dưới để biết cách sử dụng trang web này.**")
     st.write("""
-    ###### 🎉 Chào mừng bạn ghé thăm, vui lòng đọc hướng dẫn bên dưới để biết cách sử dụng trang web này. 
-
+    
     ###### ❓ Chúng mình có gì?
     - **How To Use**: Hướng dẫn sử dụng thanh điều hướng.
     - **About this Project**: Giới thiệu tổng quan về dự án.
     - **Segmentation Searching**: Công cụ tìm kiếm thông tin phân khúc khách hàng dựa trên mã KH được cung cấp.
     - **Input New Customers**: Đẩy dữ liệu khách hàng mới vào hệ thống.
-
-    ###### 🖇 Một số thuật ngữ liên quan đến Customer Segmentation:
+    
+    ###### 📝 Một số thuật ngữ liên quan đến Customer Segmentation:
     - **Recency (R)**: Đo lường số ngày kể từ lần mua hàng cuối cùng (lần truy cập gần đây nhất) đến ngày giả định chung để tính toán (ví dụ: ngày hiện tại, hoặc ngày max trong danh sách giao dịch).
     - **Frequency (F)**: Đo lường số lượng giao dịch (tổng số lần mua hàng) được thực hiện trong thời gian nghiên cứu.
     - **Monetary Value (M)**: Đo lường số tiền mà mỗi khách hàng đã chi tiêu trong thời gian nghiên cứu.
-    
+        
     ###### 📢 So, let's get started!
     """)
 

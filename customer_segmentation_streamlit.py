@@ -32,7 +32,7 @@ sample_data = pd.read_csv("cust_seg_sample.csv")
 # cluster_summary = pd.read_csv("cluster_summary.csv")
 
 if choice == 'How To Use':
-    st.subheader("How To Use This Website")
+    st.subheader("How To Use")
     st.write("##### **🎉 Chào mừng bạn ghé thăm, vui lòng đọc hướng dẫn bên dưới để biết cách sử dụng trang web này.**")
     st.write("""
     

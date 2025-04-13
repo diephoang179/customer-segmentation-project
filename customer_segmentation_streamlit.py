@@ -280,7 +280,7 @@ elif choice == 'Input New Customers':
             # 2. Nút bấm để bắt đầu phân cụm
         
         if st.button("🚀 Lấy dữ liệu cụm"):
-            # Kiểm tra RFM có tồn tại trong dữ liệu mô hình không
+            # Kiểm tra RFM có phải là số không
             try:
                 new_customer_df['Recency'] = new_customer_df['Recency'].astype(float)
                 new_customer_df['Frequency'] = new_customer_df['Frequency'].astype(float)
